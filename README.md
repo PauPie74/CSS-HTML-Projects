@@ -1,7 +1,7 @@
 # CSS-HTML-Projects
 This is a repository which stores my CSS and HTML projects.
 
-## Directiories:
+## Directories:
 
 ### GoIT resume
 >January 2021
