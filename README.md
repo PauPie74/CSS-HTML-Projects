@@ -21,5 +21,6 @@ Result: [Link](https://keen-jang-6c9f52.netlify.app)
 
 ### Playground
 >August 2021
+
 Simple beginner-level exercises in JavaScript.
 
