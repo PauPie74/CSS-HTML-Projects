@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
+
+:root {
+    --bg: #cfc0a5
+}
+
+/* https://colorswall.com/palette/75402 */
+
+body {
+    background: var(--bg);;
+    margin: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'Kaisei Tokumin';
+}
+
+.header{
+    text-align: center;
+}
+
+h1{
+}
+
+h2 {
+}
+
+h3 {
+}
+
+.header img{
+    width:300px;
+    height: 337px;
+    object-fit: cover;
+    object-position: 100% 5%;
+    border: 10px ridge #9C7454;
+}
+
+.timeline-section {
+    margin-right: 30%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.timeline-table td {
+     vertical-align: top;
+     padding-bottom: 20px;
+}
+
+
+.gallery-section {
+    margin-top: -720px;
+    float: right;
+    margin-right: 90px;
+    postion: fixed;
+}
+
+.gallery-section img {
+    width:100px;
+    height: 100px;
+    object-fit: cover;
+    float: left;
+}
+
+.gallery-section img:hover + .hide {
+  display: inline;
+  float: right;
+  width: 80px;
+  margin-right: -90px;
+  font-size: 13px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+
+
