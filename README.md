@@ -24,3 +24,10 @@ Result: [Link](https://keen-jang-6c9f52.netlify.app)
 
 Simple beginner-level exercises in JavaScript.
 
+### Brunelleschi Tribute Page
+> September 2021
+
+Very simple webpage, tribute to Filippo Brunelleschi.
+
+Result: [Link](https://kind-kilby-384f28.netlify.app)
+
