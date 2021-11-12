@@ -1,0 +1,284 @@
+body{
+  height: 760px;
+  transform-origin: auto;
+  background-color: black;
+  background-image: url("https://image.freepik.com/darmowe-zdjecie/gwiazdziste-nocne-niebo_1048-11828.jpg");
+  background-repeat: repeat;
+}
+
+
+.orbit{
+  border:1px solid #CCC;
+  position: absolute;
+  top:250px; bottom:100px; left:0;right:0;
+  margin:auto;
+  border-radius:50%;
+  z-index: -5;
+}
+
+.planet{
+  border-radius:50%;
+  position:absolute;
+  top:250px; bottom:100px; left:0;right:0;
+  overflow:hidden;
+  margin:auto;
+}
+
+#sun{
+  width: 70px;
+  height: 70px;
+  background-color: orange;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sun_black_background.png/640px-Sun_black_background.png");
+  background-size: 105px;
+  background-position: center;
+  animation: sunny 25s linear infinite;
+  filter: blur(0.5px);
+}
+
+@keyframes sunny {
+  0% {
+  transform: rotate(0deg);
+  box-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px orange, 0 0 55px orange, 0 0 75px orange;
+  }
+  25% {
+  box-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px yellow, 0 0 25px yellow, 0 0 30px orange, 0 0 40px orange, 0 0 45px orange;
+  }
+  60% {
+  box-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px yellow, 0 0 30px yellow, 0 0 35px orange, 0 0 40px orange, 0 0 50px orange;
+  }
+  100% {
+  box-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px orange, 0 0 55px orange, 0 0 75px orange;
+  transform: rotate(360deg)
+  }
+}
+
+#mercury{
+  width: 8px;
+  height: 8px;
+  background: gray;
+  animation: orbit_mer 8s linear infinite;
+}
+
+@keyframes orbit_mer{
+  0%{
+    transform:rotate(0deg)
+              translate(-50px)
+              rotate(0deg);
+
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-50px)
+              rotate(-360deg);
+  }
+}
+
+#orbit-mer{
+  width: 100px;
+  height: 100px;
+}
+
+#venus{
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,243,187,1) 22%, rgba(255,255,255,1) 38%, rgba(255,244,208,1) 61%, rgba(255,255,255,1) 85%, rgba(255,249,228,1) 100%);;
+  animation: orbit_ven 18s linear infinite;
+}
+
+@keyframes orbit_ven{
+  0%{
+    transform:rotate(0deg)
+              translate(-68px)
+              rotate(0deg);
+
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-68px)
+              rotate(-360deg);
+  }
+}
+
+#orbit-ven{
+  width: 135px;
+  height: 135px;
+}
+
+#earth{
+  width: 17px;
+  height: 17px;
+  background: blue;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Whole_world_-_land_and_oceans_12000.jpg/1200px-Whole_world_-_land_and_oceans_12000.jpg");
+  background-size: 34px;
+  animation: orbit_e 25s linear infinite;
+}
+
+@keyframes orbit_e{
+  0%{
+    transform:rotate(0deg)
+              translate(-91px)
+              rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-91px)
+              rotate(-360deg);
+  }
+}
+
+#orbit-ea{
+  width: 180px;
+  height: 180px;
+}
+
+#mars{
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(223,145,59,1) 7%, rgba(207,59,0,1) 24%, rgba(207,59,0,1) 56%, rgba(119,79,63,1) 75%, rgba(207,59,0,1) 93%, rgba(255,255,255,1) 100%);
+  animation: orbit_m 30s linear infinite;
+}
+
+@keyframes orbit_m{
+  0%{
+    transform:rotate(0deg)
+              translate(-115px)
+              rotate(0deg);
+
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-115px)
+              rotate(-360deg);
+  }
+}
+
+#orbit-ma{
+  width: 230px;
+  height: 230px;
+}
+
+#jupiter{
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(0deg, rgba(186,157,126,1) 0%, rgba(194,157,118,1) 4%, rgba(191,157,121,1) 9%, rgba(230,197,164,1) 13%, rgba(182,133,82,1) 17%, rgba(182,133,82,1) 20%, rgba(205,139,72,1) 26%, rgba(255,207,158,1) 34%, rgba(255,214,173,1) 42%, rgba(182,128,74,1) 50%, rgba(214,147,78,1) 63%, rgba(235,195,153,1) 71%, rgba(227,153,76,1) 76%, rgba(237,178,116,1) 82%, rgba(235,198,159,1) 87%, rgba(220,172,120,1) 92%, rgba(186,157,126,1) 100%);
+  animation: orbit_jup 50s linear infinite;
+}
+
+@keyframes orbit_jup{
+  0%{
+    transform:rotate(0deg)
+              translate(-170px)
+              rotate(0deg);
+
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-170px)
+              rotate(-360deg);
+  }
+}
+
+#orbit-j{
+  width:340px;
+  height:340px;
+}
+
+#saturn{
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(180deg, rgba(203,181,156,1) 0%, rgba(199,182,158,1) 11%, rgba(214,202,178,1) 19%, rgba(248,226,184,1) 35%, rgba(249,233,173,1) 48%, rgba(238,211,141,1) 62%, rgba(198,179,136,1) 81%, rgba(199,176,151,1) 100%);
+  animation: orbit_sat 65s linear infinite;
+}
+
+.rings {
+  width: 70px;
+  height: 25px;
+  border-radius:50%;
+  position:absolute;
+  top:250px; bottom:100px; left:0;right:0;
+  overflow:hidden;
+  margin:auto;
+  animation: orbit_sat 65s linear infinite;
+}
+
+#saturn-rings{
+  z-index: 1;
+  box-shadow: inset 0px -5px 0 5px rgba(221,217,180,0.8);
+}
+
+#saturn-rings1{
+  z-index: -1;
+  background: #d2cda1;
+  opacity: 0.9;
+}
+
+@keyframes orbit_sat{
+  0%{
+    transform:rotate(0deg)
+              translate(-240px)
+              rotate(0deg);
+
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-240px)
+              rotate(-360deg);
+  }
+}
+
+#orbit-sat{
+  width: 480px;
+  height: 480px;
+}
+
+#uranus{
+  width: 30px;
+  height: 30px;
+  background: #d3fffe;
+  animation: orbit_ur 75s linear infinite;
+}
+
+@keyframes orbit_ur{
+  0%{
+    transform:rotate(0deg)
+              translate(-300px)
+              rotate(0deg);
+
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-300px)
+              rotate(-360deg);
+  }
+}
+
+#orbit-ur{
+  width: 600px;
+  height: 600px;
+}
+
+#neptune{
+  width: 28px;
+  height: 29px;
+  background: linear-gradient(0deg, rgba(61,74,172,1) 0%, rgba(43,68,255,1) 9%, rgba(60,71,219,1) 22%, rgba(43,68,255,1) 42%, rgba(43,68,255,1) 59%, rgba(88,90,238,1) 73%, rgba(43,68,255,1) 88%, rgba(61,74,172,1) 100%);
+  animation: orbit_nep 80s linear infinite;
+}
+
+@keyframes orbit_nep{
+  0%{
+    transform:rotate(0deg)
+              translate(-350px)
+              rotate(0deg);
+
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-350px)
+              rotate(-360deg);
+  }
+}
+
+#orbit-nep{
+  width: 700px;
+  height: 700px;
+}
