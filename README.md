@@ -1,5 +1,5 @@
-# CSS-HTML-Projects
-This is a repository which stores my CSS and HTML projects.
+# Web-Development
+This is a repository which stores my website development related projects.
 
 ## Directories:
 
