@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Localhost test</title>
+        <script src="https://kit.fontawesome.com/c55b3adb40.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id = "counter">
+            <div id="counter-text">Something: </div><div id="counter-num"></div><button id="add">^</div>
+        </div>
+    </body>
+    <script>
+    window.onload = function(){
+
+        var lastNumber = JSON.parse(localStorage.getItem("last-num"));
+        document.getElementById('counter-num').innerHTML = lastNumber;
+        var num = lastNumber;
+
+        document.getElementById('counter-num').innerHTML = num;
+
+        console.log(document.getElementById('counter-num').innerHTML)
+
+        document.getElementById('add').addEventListener('click', function() {
+            num = num + 1
+            document.getElementById('counter-num').innerHTML = num;
+            save();
+        });
+
+        function save() {
+        localStorage.setItem("last-num", document.getElementById('counter-num').innerHTML);	
+        };
+
+        // var checked = JSON.parse(localStorage.getItem("checkbox"));
+        // document.getElementById("checkbox").checked = checked;
+
+        // toggleSwitch.addEventListener('change', save);
+        // toggleSwitch.addEventListener('change', switchTheme);
+                
+        //         document.getElementById('add').addEventListener('click', function() {
+        //             selectedLang = this.value;
+        //             console.log('You selected: ', selectedLang);
+        //             recognition.lang = selectedLang;
+        // });
+    };
+    </script>
+</html>
